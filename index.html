@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--Dirección web donde encontrar la página: https://merecaballero.github.io/AROMA/-->
+<html lang="es"> <!--Se establece que el idioma es español-->
+<!--head es la primera parte del html, aquí se indica la información acerca del documento-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA Pagina principal</title> <!--Nombre que se verá en la barra de navegación-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!--Body es la segunda parte del html, la parte 'visible' del documento-->
+<body>
+    <!--Encabezado o header, en este se encuentra el logotipo y la barra de navegación interna de la página-->
+    <header>
+        <figure class="logo">
+            <img src="images/logoMiguel.png" alt="logo" title="AROMA" width="112.5" height="100">
+        </figure>
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="views/galeria.html">Galería</a></li>
+                <li><a href="views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Dividido por secciones encontramos el cuerpo de la página-->
+    <section class="intro">
+        <div class="titulo">
+            <h1>AROMA</h1>
+            <h3>Líder en fragancias exclusivas</h3>
+        </div>
+        <div class="parrafo">
+            <p>
+                En AROMA, somos una empresa líder en la creación y comercialización de fragancias únicas, 
+                diseñadas para transformar y elevar cada experiencia sensorial. Desde nuestras primeras colecciones 
+                hasta las más recientes, hemos mantenido un compromiso firme con la calidad y la innovación, 
+                brindando perfumes sofisticados y elaborados con los mejores ingredientes del mundo. Nuestro objetivo 
+                es conectar a las personas con sus emociones a través de aromas exquisitos, convirtiendo cada fragancia 
+                en una expresión de estilo y personalidad.
+            </p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="titulo">
+            <h2>Sobre Nosotros</h2>
+        </div>
+        <div class="parrafo">
+            <p>
+                En AROMA, contamos con un equipo apasionado y experto en el arte de la perfumería, que trabaja para 
+                crear productos que cautivan los sentidos. Nuestra historia está arraigada en una visión de perfección 
+                olfativa y en la búsqueda constante de nuevas combinaciones aromáticas que nos diferencien en el mercado. 
+                Nos enorgullece ser un referente en la industria, ofreciendo fragancias para aquellos que valoran la 
+                elegancia, el lujo y la autenticidad en cada esencia.
+            </p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="titulo">
+            <h2>Nuestros Servicios</h2>
+        </div>
+        <div class="parrafo">
+            <p>
+                En AROMA, ofrecemos una amplia gama de servicios que incluyen la creación de fragancias personalizadas, 
+                asesoría en selección de perfumes para eventos especiales, y distribución tanto al por mayor como al 
+                detalle para particulares y empresas. Además, brindamos soluciones olfativas para entornos corporativos 
+                y hoteleros, creando ambientes únicos a través de aromas selectos. Nuestro compromiso es brindar una 
+                experiencia excepcional a nuestros clientes, garantizando la satisfacción en cada interacción.
+            </p>
+        </div>
+    </section>
+    <!--Sección donde se van a añadir las noticias que encontramos en el archivo 'noticias.json'-->
+    <section class="news">
+        <div class="titulo">
+            <h2>ÚLTIMAS NOTICIAS SOBRE AROMA</h2>
+        </div>
+        <div class="parrafo">
+            <div id="noticias"></div>
+        </div>
+    </section>
+    <!--Pie de página o footer, aquí se va a visualizar de una manera diferenciada (mediante CSS) la ubicación
+    los enlaces a las redes sociales con sus respectivos logos y el enlace a la página de Aviso Legal de la web-->
+    <footer>
+        <p>
+            <a href="https://www.google.es/maps/place/C%2F+Gerona,+27,+03001+Alicante+(Alacant),+Alicante/@38.3441118,-0.4890787,17z/data=!3m1!4b1!4m6!3m5!1s0xd6237b31bd97399:0x63c3b35be096ed2e!8m2!3d38.3441076!4d-0.4865038!16s%2Fg%2F11b8vgprh4?hl=es&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Calle Gerona, 27, ALICANTE</a>
+        </p>
+        <div class="social-media">
+            <p>Nuestras redes sociales:</p>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="https://x.com" target="_blank"><img src="images/x.png" alt="X" width="30" height="30"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" width="30" height="30"></a>
+        </div>
+        <p><a href="views/aviso_legal.html">Aviso legal</a></p>
+        <p>&copy; 2024 AROMA</p>
+    </footer>
+    <!--Conexión con el código JavaScript, encontrado en el documento 'scripts.js'-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

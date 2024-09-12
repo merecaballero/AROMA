@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA Contacto</title>
+    <!--Se importan las librerias y hojas de estilo necesarias para visualizar de manera correcta el mapa dinámico-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <figure class="logo">
+            <img src="../images/logoMiguel.png" alt="logo" title="AROMA" width="112.5" height="100">
+        </figure>
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <h2 class="titulo">Contacto</h2>
+        <div id="map"></div> <!--Dentro de este contenedor se añadirá el mapa dinámico-->
+    </section>
+    <section>
+        <!--Datos de contacto-->
+        <div class="titulo">
+            <h2>Datos de contacto:</h2>
+        </div>
+        <div class="contacto">
+            <p>Dirección: Calle Gerona, 27, Alicante, España</p>
+            <p>Teléfono: 673 124 547</p>
+            <p>Email: contacto@aroma.com</p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <a href="https://www.google.es/maps/place/C%2F+Gerona,+27,+03001+Alicante+(Alacant),+Alicante/@38.3441118,-0.4890787,17z/data=!3m1!4b1!4m6!3m5!1s0xd6237b31bd97399:0x63c3b35be096ed2e!8m2!3d38.3441076!4d-0.4865038!16s%2Fg%2F11b8vgprh4?hl=es&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Calle Gerona, 27, ALICANTE</a>
+        </p>
+        <div class="social-media">
+            <p>Nuestras redes sociales:</p>
+            <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook" width="30" height="30"></a>
+            <a href="https://x.com" target="_blank"><img src="../images/x.png" alt="X" width="30" height="30"></a>
+            <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram" width="30" height="30"></a>
+        </div>
+        <p><a href="aviso_legal.html">Aviso legal</a></p>
+        <p>&copy; 2024 AROMA</p>    
+    </footer>
+    <!--Se añaden los script necesarios para la visualización correcta del mapa dinámico-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> <!--Gracias a este script se permite trazar la ruta desde la ubicación del usuario a la ubicación del negocio-->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

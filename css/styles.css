@@ -1,0 +1,263 @@
+/*Hoja de estilo CSS del proyecto*/
+/*Se establecen las caracteristicas generales que tendrá el cuerpo de nuestra página*/
+body { 
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 150px;
+}
+
+/*---------------------------------------------------------ENCABEZADO-----------------------------------------------------*/
+/*Se establecen las caracteristicas del encabezado*/
+header {
+    width:100%;
+    top:0;
+    position:fixed;
+    background-color: #ce9b0e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/*Se establecen las caracteristicas del logo (objetos tipo imagen pertenecientes a la clase 'logo')*/
+.logo img{
+    height: 100px;
+}
+
+/*Se establecen las caracteristicas de la barra de navegación*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Para indicar en que página nos encontramos dentro de la barra de navegación*/
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*------------------------------------------------------PIE DE PÁGINA-----------------------------------------------------*/
+/*Se establecen las caracteristicas generales de los pies de página*/
+footer {
+    background-color: #ce9b0e;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Se establecen las características de las imagenes que encontramos en el pie de página (logos de redes sociales)*/
+.social-media img{
+    height: 30px;
+    margin: 0 10px;
+}
+
+/*------------------------------------------------------GENERAL-----------------------------------------------------------*/
+/*Para que cada sección aparezca diferenciada en la página*/
+section {
+    padding: 20px 70px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*Características para las clases 'titulo'*/
+.titulo{
+    text-align: center;
+}
+
+/*Características para las clases 'parrafo'*/
+.parrafo{
+    text-align: justify;
+    line-height: 25px;
+}
+
+/*--------------------------------------------------------FORMULARIOS-----------------------------------------------------*/
+/*Se establecen las características generales de un formulario*/
+form { 
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label { 
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input, 
+textarea, 
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*Para poder visualizar el texto y el checkbox en la misma linea*/
+label[for="politica_privacidad"]{ 
+    display: inline;
+}
+
+input[type="checkbox"]{
+    width:13px;
+}
+
+/*Se establece la estetica de los botones que encontraremos en el formulario*/
+.actions button{
+    width:400px;
+    height:50px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*Para visualizar en negrita el precio total que se marca en el formulario*/
+.total {
+    font-weight: bold;
+}
+
+/*----------------------------------------------BOTÓN DE VOLVER AL INICIO-------------------------------------------------*/
+.boton-principal{
+    text-align: center;
+}
+
+.boton-principal button{
+    width:400px;
+    height:50px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------GALERIA DINÁMICA---------------------------------------------------*/
+figure {
+    margin: 10px;
+}
+
+figcaption{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+#gallery {
+    max-width: 400px;
+    margin: 20px auto; /* Centrar horizontalmente */
+    overflow: hidden;
+    position: relative; /* Para posicionar flechas de navegación */
+    display:block;
+    z-index: 1;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ajustar el ancho de la galería para evitar desplazamientos extra */
+}
+
+.gallery-item {
+    flex-shrink: 0;
+    width: 100%; /* Cada imagen ocupará todo el ancho del contenedor */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    height: 400px; /* Mantener altura constante */
+    object-fit: cover; /* Asegurar que la imagen se ajuste al contenedor sin deformarse */
+}
+
+/* Navegación de la galería */
+.gallery-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none; /* Permitir la interacción solo en los botones */
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    pointer-events: all; /* Permitir clic en los botones */
+    z-index: 1; /* Asegurarse de que estén por encima de las imágenes */
+}
+
+.nav-button.prev-button {
+    margin-left: 10px; /* Separar un poco del borde izquierdo */
+}
+
+.nav-button.next-button {
+    margin-right: 10px; /* Separar un poco del borde derecho */
+}
+
+.nav-button > span {
+    font-size: 24px;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 95, 95, 0.8);
+}
+
+/*-------------------------------------------PÁGINA DE CONTACTO (MAPA DINÁMICO)-------------------------------------------*/
+/*Se establecen las medidas de mapa dinámico para una correcta visualización*/
+#map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    z-index: 500;
+}
+
+.contacto {
+    text-align: center;
+    font-weight: bold;
+}
+
+.boton-inicio{
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: rgb(239, 237, 237); /* Color de fondo del botón */
+    color: black; /* Color del texto */
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 2px; /* Bordes redondeados para el botón */
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background-color: #a5a5a5; /* Cambio de color al pasar el ratón por encima */
+}
